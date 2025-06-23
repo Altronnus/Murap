@@ -17,4 +17,4 @@ function renderProducts(data) {
   });
 }
 
-renderProducts(products); // from demo-data.js
+renderProducts(products);
