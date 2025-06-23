@@ -1,26 +1,22 @@
-[
+const products = [
   {
-    "id": 1,
-    "name": "Удлинитель 3м",
-    "photo": "https://via.placeholder.com/250x150.png?text=Удлинитель",
-    "opt_price": 180,
-    "retail_price": 220,
-    "category": "Электрика"
+    name: "Удлинитель 5м",
+    price: 450,
+    image: "https://via.placeholder.com/200x140?text=Product+1"
   },
   {
-    "id": 2,
-    "name": "Труба ПВХ 20мм",
-    "photo": "https://via.placeholder.com/250x150.png?text=Труба+ПВХ",
-    "opt_price": 90,
-    "retail_price": 120,
-    "category": "Сантехника"
+    name: "Светодиодная лампа",
+    price: 120,
+    image: "https://via.placeholder.com/200x140?text=Product+2"
   },
   {
-    "id": 3,
-    "name": "Моющее средство",
-    "photo": "https://via.placeholder.com/250x150.png?text=Моющее",
-    "opt_price": 150,
-    "retail_price": 190,
-    "category": "Хозтовары"
+    name: "Кран сантехнический",
+    price: 600,
+    image: "https://via.placeholder.com/200x140?text=Product+3"
+  },
+  {
+    name: "Таз 10 литров",
+    price: 250,
+    image: "https://via.placeholder.com/200x140?text=Product+4"
   }
-]
+];
