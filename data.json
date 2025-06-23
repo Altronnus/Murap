@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Удлинитель 3м",
+    "photo": "https://via.placeholder.com/250x150.png?text=Удлинитель",
+    "opt_price": 180,
+    "retail_price": 220,
+    "category": "Электрика"
+  },
+  {
+    "id": 2,
+    "name": "Труба ПВХ 20мм",
+    "photo": "https://via.placeholder.com/250x150.png?text=Труба+ПВХ",
+    "opt_price": 90,
+    "retail_price": 120,
+    "category": "Сантехника"
+  },
+  {
+    "id": 3,
+    "name": "Моющее средство",
+    "photo": "https://via.placeholder.com/250x150.png?text=Моющее",
+    "opt_price": 150,
+    "retail_price": 190,
+    "category": "Хозтовары"
+  }
+]
