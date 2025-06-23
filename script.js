@@ -1,24 +1,20 @@
-async function loadProducts() {
-  const res = await fetch('data.json');
-  const products = await res.json();
+const productList = document.getElementById("product-list");
 
-  const list = document.getElementById('product-list');
-  list.innerHTML = '';
+function renderProducts(data) {
+  productList.innerHTML = "";
+  data.forEach((product) => {
+    const card = document.createElement("div");
+    card.className = "card";
 
-  products.forEach(product => {
-    const div = document.createElement('div');
-    div.className = 'product';
-
-    div.innerHTML = `
-      <img src="${product.photo}" alt="${product.name}" />
-      <div class="product-name">${product.name}</div>
-      <div class="product-price">💰 Опт: ${product.opt_price} сом</div>
-      <div class="product-price">🏷 Розница: ${product.retail_price} сом</div>
-      <div class="product-category">📁 ${product.category}</div>
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}" />
+      <h3>${product.name}</h3>
+      <div class="price">💰 ${product.price} сом</div>
+      <button class="btn">🛒 В корзину</button>
     `;
 
-    list.appendChild(div);
+    productList.appendChild(card);
   });
 }
 
-loadProducts();
+renderProducts(products); // from demo-data.js
