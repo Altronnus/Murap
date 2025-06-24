@@ -1,27 +1,8 @@
-const products = [
-  {
-    name: "Электролампа 20W",
-    price: 150,
-    image: "https://via.placeholder.com/200x140?text=Лампа"
-  },
-  {
-    name: "Кран водяной",
-    price: 300,
-    image: "https://via.placeholder.com/200x140?text=Кран"
-  },
-  {
-    name: "Удлинитель 5м",
-    price: 600,
-    image: "https://via.placeholder.com/200x140?text=Удлинитель"
-  },
-  {
-    name: "Таз 10л",
-    price: 200,
-    image: "https://via.placeholder.com/200x140?text=Таз"
-  },
-  {
-    name: "Щетка для пола",
-    price: 180,
-    image: "https://via.placeholder.com/200x140?text=Щетка"
-  }
+const demoProducts = [
+  { name: "Светодиодная лампа", opt_price: 50, retail_price: 70 },
+  { name: "Удлинитель 3м", opt_price: 120, retail_price: 150 },
+  { name: "Мыло жидкое", opt_price: 80, retail_price: 110 },
+  { name: "Трубы ПВХ", opt_price: 200, retail_price: 250 },
+  { name: "Скотч упаковочный", opt_price: 40, retail_price: 55 },
+  { name: "Выключатель одноклавишный", opt_price: 90, retail_price: 120 }
 ];
