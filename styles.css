@@ -1,69 +1,65 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background: url("A_digital_illustration_background_designed_for_an_.png") no-repeat center center fixed;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("A_digital_illustration_background_designed_for_an_.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.5); /* чтобы текст читался на фоне */
-  padding: 20px;
-  border-radius: 15px;
   max-width: 600px;
-  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  margin-top: 30px;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 15px;
   text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-/* Кнопки */
-button {
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
+.product-card {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  background: #ff5a5f;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: all 0.3s ease;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  animation: slideUp 0.5s ease;
 }
 
-button:hover {
-  background: #e0484d;
+.product-card:hover {
+  transform: scale(1.02);
 }
 
-/* Адаптация под мобилки */
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
-  .container {
-    padding: 15px;
-  }
+.product-price {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
 
-  h1 {
-    font-size: 20px;
-  }
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
-  button {
-    width: 100%;
-    font-size: 14px;
-  }
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
