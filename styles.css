@@ -1,90 +1,69 @@
-:root {
-  --bg-color: #ffffff;
-  --text-color: #111;
-  --card-bg: #f9f9f9;
-  --accent: #6c47ff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: var(--bg-color);
-  color: var(--text-color);
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 1rem;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  background: var(--card-bg);
-  border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: url("A_digital_illustration_background_designed_for_an_.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.2s ease;
+  justify-content: flex-start;
+  padding: 20px;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-}
-
-.card img {
+.container {
+  background: rgba(0, 0, 0, 0.5); /* чтобы текст читался на фоне */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
   width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
 }
 
-.card h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.price {
-  color: #10b981;
-  font-weight: 600;
-  margin: 0.3rem 0;
-}
-
-.btn {
-  background: var(--accent);
-  color: white;
+/* Кнопки */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
   border: none;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  margin-top: auto;
+  border-radius: 12px;
+  background: #ff5a5f;
+  color: #fff;
   cursor: pointer;
-  transition: background 0.2s ease;
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
-.btn:hover {
-  background: #4f32cc;
+button:hover {
+  background: #e0484d;
 }
 
-@media (max-width: 500px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+/* Адаптация под мобилки */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
   }
 
-  .card img {
-    height: 120px;
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
   }
 }
