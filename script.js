@@ -1,20 +1,14 @@
-const productList = document.getElementById("product-list");
+const list = document.getElementById("product-list");
 
-function renderProducts(data) {
-  productList.innerHTML = "";
-  data.forEach((product) => {
-    const card = document.createElement("div");
-    card.className = "card";
+demoProducts.forEach(product => {
+  const card = document.createElement("div");
+  card.className = "product-card";
 
-    card.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" />
-      <h3>${product.name}</h3>
-      <div class="price">💰 ${product.price} сом</div>
-      <button class="btn">🛒 В корзину</button>
-    `;
+  card.innerHTML = `
+    <div class="product-name">${product.name}</div>
+    <div class="product-price">💰 Опт: ${product.opt_price} сом</div>
+    <div class="product-price">🏷 Розница: ${product.retail_price} сом</div>
+  `;
 
-    productList.appendChild(card);
-  });
-}
-
-renderProducts(products);
+  list.appendChild(card);
+});
